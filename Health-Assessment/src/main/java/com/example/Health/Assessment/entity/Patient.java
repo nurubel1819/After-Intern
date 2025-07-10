@@ -25,4 +25,8 @@ public class Patient {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "patient_id")
     private List<Disease> diseases = new ArrayList<>();
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "patient_id")
+    private List<PatientHistory> patientHistory = new ArrayList<>();
 }

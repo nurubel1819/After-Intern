@@ -1,0 +1,692 @@
+{
+  "form": {
+    "details": {
+      "title": "Swasti Health Assessment",
+      "description": "Comprehensive health assessment covering various disease categories"
+    },
+    "inputs": [
+      {
+        "group": [
+          {
+            "name": "Anemia",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you often feel tired, dizziness, or short of breath even when you haven't done much physical work?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha1_1",
+                "options": [
+                  {
+                    "name": "ha1_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha1_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Have you seen your skin, lips, or nails look paler than usual recently?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha1_2",
+                "options": [
+                  {
+                    "name": "ha1_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha1_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do your hands or feet feel cold even when the weather is warm?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha1_3",
+                "options": [
+                  {
+                    "name": "ha1_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha1_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "Diabetes",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you have a family history of Diabetes",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha2_1",
+                "options": [
+                  {
+                    "name": "ha2_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha2_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you often feel very thirsty even after drinking enough water?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha2_2",
+                "options": [
+                  {
+                    "name": "ha2_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha2_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you need to urinate very often, including during the night?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha2_3",
+                "options": [
+                  {
+                    "name": "ha2_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha2_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Have you lost or gained weight recently without any clear reason?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha2_4",
+                "options": [
+                  {
+                    "name": "ha2_4_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha2_4_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "Hypertension",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you often have headaches or blurred vision?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha3_1",
+                "options": [
+                  {
+                    "name": "ha3_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha3_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you feel chest pain or tightness when doing physical work or exercise?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha3_2",
+                "options": [
+                  {
+                    "name": "ha3_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha3_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Have you ever been told by a doctor that you have high blood pressure?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha3_3",
+                "options": [
+                  {
+                    "name": "ha3_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha3_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you often feel stressed or anxious?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha3_4",
+                "options": [
+                  {
+                    "name": "ha3_4_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha3_4_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "Respiratory diseases",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you feel short of breath even with light physical activity (like walking or climbing stairs)?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha4_1",
+                "options": [
+                  {
+                    "name": "ha4_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha4_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you often have a cough, with or without phlegm?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha4_2",
+                "options": [
+                  {
+                    "name": "ha4_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha4_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you hear a wheezing or whistling sound when you breathe?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha4_3",
+                "options": [
+                  {
+                    "name": "ha4_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha4_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you often feel tightness or heaviness in your chest?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha4_4",
+                "options": [
+                  {
+                    "name": "ha4_4_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha4_4_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "Musculoskeletal diseases",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you have joint or muscle pain while doing everyday tasks?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha5_1",
+                "options": [
+                  {
+                    "name": "ha5_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha5_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you feel stiffness in your body at any time during the day?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha5_2",
+                "options": [
+                  {
+                    "name": "ha5_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha5_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you have joint or muscle pain that lasts for many hours?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha5_3",
+                "options": [
+                  {
+                    "name": "ha5_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha5_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "Seasonal illnesses",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "Do you get sneezing, itchy eyes, or a runny nose when the weather changes?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha6_1",
+                "options": [
+                  {
+                    "name": "ha6_1_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha6_1_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you get skin rashes, irritation, or sunburn when you stay in the sun for a long time?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha6_2",
+                "options": [
+                  {
+                    "name": "ha6_2_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha6_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do you feel dizzy, sweat a lot, or feel sick during very hot weather?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha6_3",
+                "options": [
+                  {
+                    "name": "ha6_3_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha6_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Do your joints or muscles hurt more during cold or rainy weather?",
+                "images": [],
+                "description": "",
+                "input_type": "switch",
+                "required": true,
+                "read_only": false,
+                "name": "ha6_4",
+                "options": [
+                  {
+                    "name": "ha6_4_yes",
+                    "value": "yes",
+                    "weight": 1,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha6_4_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          },
+          {
+            "name": "General health",
+            "icon": "https://",
+            "fields": [
+              {
+                "label": "On average, how many hours do you sleep in a day?",
+                "images": [],
+                "description": "",
+                "input_type": "number",
+                "required": true,
+                "read_only": false,
+                "name": "ha7_1",
+                "options": [],
+                "default_value": "8"
+              },
+              {
+                "label": "In the past 2 weeks, have you experienced feelings of anxiety or uneasiness? If yes, describe briefly.",
+                "images": [],
+                "description": "",
+                "input_type": "dropdown",
+                "required": false,
+                "read_only": false,
+                "name": "ha7_2",
+                "options": [
+                  {
+                    "name": "ha7_2_yes",
+                    "value": "yes",
+                    "weight": 0,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha7_2_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Have you felt low, hopeless, or unusually sad in the past 2 weeks? If yes, share briefly.",
+                "images": [],
+                "description": "",
+                "input_type": "dropdown",
+                "required": false,
+                "read_only": false,
+                "name": "ha7_3",
+                "options": [
+                  {
+                    "name": "ha7_3_yes",
+                    "value": "yes",
+                    "weight": 0,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha7_3_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Have you lost interest in daily activities you usually enjoy? If yes, explain briefly.",
+                "images": [],
+                "description": "",
+                "input_type": "dropdown",
+                "required": false,
+                "read_only": false,
+                "name": "ha7_4",
+                "options": [
+                  {
+                    "name": "ha7_4_yes",
+                    "value": "yes",
+                    "weight": 0,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha7_4_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              },
+              {
+                "label": "Who do you usually turn to for emotional support or to talk when feeling low?",
+                "images": [],
+                "description": "",
+                "input_type": "dropdown",
+                "required": false,
+                "read_only": false,
+                "name": "ha7_5",
+                "options": [
+                  {
+                    "name": "ha7_5_yes",
+                    "value": "yes",
+                    "weight": 0,
+                    "icon": ""
+                  },
+                  {
+                    "name": "ha7_5_no",
+                    "value": "no",
+                    "weight": 0,
+                    "icon": ""
+                  }
+                ],
+                "default_value": "no"
+              }
+            ]
+          }
+        ],
+        "fields": []
+      }
+    ]
+  }
+}

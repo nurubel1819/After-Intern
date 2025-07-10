@@ -11,4 +11,8 @@ public class DiseaseDto {
     private Long id;
     private String disease;
     private ArrayList<QuestionsDto> questions;
+    public int totalScore;
+    public String colorCode;
+    public String status;
+    public String advice;
 }
