@@ -1,0 +1,40 @@
+[
+  {
+    "disease": "Anemia",
+    "questions": [
+      {
+        "question": "Do you often feel tired, dizziness, or short of breath even when you haven't done much physical work?",
+        "answer": "yes"
+      },
+      {
+        "question": "Have you seen your skin, lips, or nails look paler than usual recently?",
+        "answer": "no"
+      },
+      {
+        "question": "Do your hands or feet feel cold even when the weather is warm?",
+        "answer": "yes"
+      }
+    ]
+  },
+  {
+    "disease": "Diabetes",
+    "questions": [
+      {
+        "question": "Do you have a family history of Diabetes",
+        "answer": "yes"
+      },
+      {
+        "question": "Do you often feel very thirsty even after drinking enough water?",
+        "answer": "yes"
+      },
+      {
+        "question": "Do you need to urinate very often, including during the night?",
+        "answer": "yes"
+      },
+      {
+        "question": "Have you lost or gained weight recently without any clear reason?",
+        "answer": "yes"
+      }
+    ]
+  }
+]
