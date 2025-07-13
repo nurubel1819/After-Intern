@@ -34,10 +34,10 @@ public class UserPatientController {
         return ResponseEntity.ok(patient);
     }
 
-    @PostMapping("/save-patient-survey")
-    ResponseEntity<?> savePatientHistory(@RequestParam Long patientId, @RequestBody List<DiseaseDto> dtoAll){
-        if(userPatientService.getPatientById(patientId) == null) return ResponseEntity.badRequest().body("UserPatient not found");
+    @PutMapping("/update-patient-survey")
+    ResponseEntity<?> updatePatientSurvey(@RequestParam Long patientId, @RequestBody List<DiseaseDto> dtoAll){
         Patient userPatient = userPatientService.getPatientById(patientId);
+        if(userPatient == null) return ResponseEntity.badRequest().body("UserPatient not found");
 
         if(!userPatient.getDiseases().isEmpty()){
             PatientHistory patientHistory = new PatientHistory();
@@ -81,6 +81,13 @@ public class UserPatientController {
             userPatient =  userPatientService.savePatient(userPatient);
             return ResponseEntity.ok(allDisease);
         }
+        else return ResponseEntity.badRequest().body("User disease is Empty");
+    }
+
+    @PostMapping("/save-patient-survey")
+    ResponseEntity<?> savePatientHistory(@RequestParam Long patientId, @RequestBody List<DiseaseDto> dtoAll){
+        Patient userPatient = userPatientService.getPatientById(patientId);
+        if(userPatient == null) return ResponseEntity.badRequest().body("UserPatient not found");
 
         PatientHistory patientHistory = new PatientHistory();
 
@@ -125,7 +132,7 @@ public class UserPatientController {
             patientHistory.setPatientName(userPatient.getPatientName());
             patientHistory.getPatientDiseaseHistories().add(patientDiseaseHistory);
         }
-        userPatient.setDiseases(allUploadDisease);
+        userPatient.getDiseases().addAll(allUploadDisease);
         userPatient.getPatientHistory().add(patientHistory);
         userPatient =  userPatientService.savePatient(userPatient);
         return ResponseEntity.ok(allUploadDisease);
@@ -135,6 +142,23 @@ public class UserPatientController {
         Patient patient = userPatientService.getPatientById(patientId);
         if(patient == null) return ResponseEntity.badRequest().body("Patient not found");
         return ResponseEntity.ok(patient.getPatientHistory());
+    }
+    @GetMapping("/v2/get-single-patient-history")
+    ResponseEntity<?> getSinglePatientHistoryVersion2(@RequestParam Long patientId){
+        Patient patient = userPatientService.getPatientById(patientId);
+        if(patient == null) return ResponseEntity.badRequest().body("Patient not found");
+        List<Disease> patientAllDisease = patient.getDiseases();
+        List<DiseaseDto> allDto = new ArrayList<>();
+        for(Disease disease : patientAllDisease){
+            DiseaseDto dto = new DiseaseDto();
+            dto.setDisease(disease.getDiseaseName());
+            dto.setStatus(disease.getStatus());
+            dto.setTotalScore(disease.getTotalScore());
+            dto.setColorCode(disease.getColorCode());
+            dto.setAdvice(disease.getAdvice());
+            allDto.add(dto);
+        }
+        return ResponseEntity.ok(allDto);
     }
 
 }
